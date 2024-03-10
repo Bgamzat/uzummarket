@@ -1,0 +1,267 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Playfair';
+    src: url(../fonts/PlayfairDisplay-Regular.ttf);
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url(../fonts/Roboto-Regular.ttf);
+    font-weight: 500;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    max-width: 1200px;
+    max-height: 50px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+
+}
+
+.nav {
+    padding: 20px 0;
+    background-color: blanchedalmond;
+    border: 1px solid blue;
+}
+
+.nav__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav__list {
+    display: flex;
+    gap: 40px;
+}
+
+.nav__list-link {
+    color: #000;
+    font-family: Playfair;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: bolder;
+    line-height: normal;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.dropdown__item {
+    position: relative;
+}
+
+.dropdown__list {
+    border-radius: 2px;
+    border: 1px solid #e5e5e5;
+    background-color: white;
+    min-width: 160px;
+    position: absolute;
+    margin-top: 24px;
+    transition: 0.5s;
+    transform: scale(0);
+}
+
+.dropdown__list-link {
+    padding: 12px 30px;
+    display: block;
+    color: #000;
+    font-family: "Playfair";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: bolder;
+    line-height: normal;
+}
+
+.border1__link {
+    border-bottom: 1px solid #41a28e;
+    border-top: 1px solid #41a28e;
+}
+
+.border2__link {
+    border-bottom: 1px solid #41a28e;
+}
+
+.dropdown__item:hover .dropdown__list {
+    opacity: 1;
+    top: 0;
+    transform: scale(1.1);
+}
+
+.nav__search {
+    dsiplay: flex;
+    gap: 4px;
+}
+
+.nav__search input {
+    padding: 6px 12px;
+    max-width: 180px;
+    border: 1px solid #41a28e;
+    outline: none;
+    color: #4b4848;
+    font-family: "Roboto";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.nav__search input::placeholder {
+    color: #4b4848;
+}
+
+.nav__search button {
+    padding: 7px;
+    border: none;
+    outline: none;
+    background: #41a28e;
+}
+
+.nav__list-link:hover {
+    transform: scale(1.2);
+    text-decoration: underline;
+    text-decoration-color: black;
+}
+
+.nav__logo {
+    margin-right: 10px;
+}
+
+.nav__logo:hover {
+    transform: scale(1.2);
+}
+
+
+.products {
+    background-color: blanchedalmond;
+    border: 1px solid blue;
+}
+
+.grid__container {
+    display: grid;
+    grid-template-columns: repeat(7, 100px);
+    grid-template-rows: repeat(5, 120px);
+    gap: 60px;
+    padding-top: 10px;
+    padding-bottom: 60px;
+    justify-content: center;
+}
+
+.grid__item {
+    padding: 0;
+    border: 1px solid blue;
+    background-color: gainsboro;
+}
+
+.grid__item:hover {
+    transform: scale(1.1);
+}
+
+.item-info {
+    width: 105px;
+    height: 27px;
+    display: flex;
+    justify-content: center;
+}
+
+.item-info span {
+    color: black;
+    text-align: center;
+    font-family: "Playfair";
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.footer {
+    padding-top: 10px 0;
+    background-color: blanchedalmond;
+    border: 1px solid blue;
+    width: 100%;
+    height: 120px;
+}
+
+.footer__item-title {
+    color: black;
+    font-family: 'Playfair';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-bottom: 10px;
+}
+
+.footer__item-list-link {
+    color: black;
+    font-family: 'Playfair';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: flex;
+    flex-direction: column;
+    max-width: 255px;
+    min-height: 30px;
+    justify-content: left;
+    flex-shrink: 0;
+}
+
+li:hover .footer__item-list-link {
+    color: red;
+    text-decoration: underline;
+    scale: 1.1;
+}
+
+.footer__content {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.footer__item-payments {
+    display: flex;
+    gap: 20px;
+}
+
+.footer__item-payments-link {
+    width: 30px;
+    height: 30px;
+}
+
+.footer__text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 40px;
+    background-color: blanchedalmond
+}
+
+.footer__text-descr {
+    color: blue;
+    font-family: 'Playfair';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    text-decoration: underline;
+}
